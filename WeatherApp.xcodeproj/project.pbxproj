@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E180759283AD10C00F75CF8 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E180758283AD10C00F75CF8 /* WeatherDetailViewController.swift */; };
 		4E86D073283AC95A0099DB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86D072283AC95A0099DB16 /* AppDelegate.swift */; };
 		4E86D075283AC95A0099DB16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86D074283AC95A0099DB16 /* SceneDelegate.swift */; };
 		4E86D077283AC95A0099DB16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86D076283AC95A0099DB16 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E180758283AD10C00F75CF8 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		4E86D06F283AC95A0099DB16 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E86D072283AC95A0099DB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E86D074283AC95A0099DB16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E18075A283AD53400F75CF8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E86D076283AC95A0099DB16 /* ViewController.swift */,
+				4E180758283AD10C00F75CF8 /* WeatherDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		4E86D066283AC95A0099DB16 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +110,9 @@
 		4E86D071283AC95A0099DB16 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E18075A283AD53400F75CF8 /* ViewControllers */,
 				4E86D072283AC95A0099DB16 /* AppDelegate.swift */,
 				4E86D074283AC95A0099DB16 /* SceneDelegate.swift */,
-				4E86D076283AC95A0099DB16 /* ViewController.swift */,
 				4E86D078283AC95A0099DB16 /* Main.storyboard */,
 				4E86D07B283AC95C0099DB16 /* Assets.xcassets */,
 				4E86D07D283AC95C0099DB16 /* LaunchScreen.storyboard */,
@@ -260,6 +271,7 @@
 			files = (
 				4E86D077283AC95A0099DB16 /* ViewController.swift in Sources */,
 				4E86D073283AC95A0099DB16 /* AppDelegate.swift in Sources */,
+				4E180759283AD10C00F75CF8 /* WeatherDetailViewController.swift in Sources */,
 				4E86D075283AC95A0099DB16 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
