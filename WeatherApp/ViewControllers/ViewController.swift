@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    // IBOutlet
+    // IBOutlets
     @IBOutlet weak var cityLbl: UILabel!
     @IBOutlet weak var tempLbl: UILabel!
     @IBOutlet weak var weatherLbl: UILabel!
@@ -58,6 +58,13 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let vc = WeatherDetailViewController.instantiateFromStoryboard()
+        vc.cityStr = self.cityLbl.text!
+        vc.tempStr = self.tempLbl.text!
+        vc.weatherStr = self.weatherLbl.text!
+        if let weatherCode = self.weatherArray[indexPath.row].weather.first?.id {
+            vc.imgCode = self.getSystemIcon(conditionCode: weatherCode)
+        }
+        vc.model = self.weatherArray[indexPath.row]
         self.present(vc, animated: true, completion: nil)
     }
 }
