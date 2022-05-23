@@ -9,6 +9,12 @@ import UIKit
 
 class WeatherDetailViewController: UIViewController {
 
+    class func instantiateFromStoryboard() -> WeatherDetailViewController
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: String(describing: self)) as! WeatherDetailViewController
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
